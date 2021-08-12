@@ -1,0 +1,548 @@
+ 
+ /*    Includes Font => font-family: 'Poppins', sans-serif;  */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+ /*-------Universal-tags------*/
+ body{
+ 	font-family: 'Poppins', sans-serif; 
+ 	box-sizing: border-box;
+ }
+
+ *{
+    transition: all .3s;
+ }
+
+ ul{
+ 	list-style: none;
+ }
+
+ a{
+ 	text-decoration: none;
+ }
+
+ :root{
+ 	--main-color: #0084ff;
+ 	--txt-color:  #374048;
+ }
+
+ .btn{
+  	background: var(--main-color);
+  	color: #fff !important;
+  	font-weight: 500;
+  }
+
+.btn:hover{
+  	background: var(--txt-color);
+  	color: #fff !important;
+  }
+
+ /*
+    ==============================
+    =                  Header Style                 =
+    ==============================
+ */
+
+  #header {
+  	width: 100%;
+  	z-index: 999;
+  	background: #E7E8EB;
+    padding: 10px 0;
+    transition: all .3s;
+  }
+
+  #header.active{
+  	position: fixed;
+  	background: #fff;
+    padding: 0;
+    box-shadow: 0 2px 42px rgb(0 0 0 / 10%);
+  }
+
+ #header #header-img img{
+ 	width: 100px;
+ 	height: auto;
+ }
+
+  #header #nav-bar ul{
+  	display: flex;
+  	text-transform: uppercase;
+  	font-weight: 500;
+  	align-items: center;
+  	justify-content: flex-end;
+  	height: 100%;
+  	margin-bottom: 0;
+  }
+
+    #header #nav-bar ul li a{
+    	color: var(--txt-color);
+    	border-radius: 0;
+    }
+
+    #header.active #nav-bar ul li a{
+    	border-radius: 50px;
+    }
+
+  #header #nav-bar ul li:hover > a{
+  	color: var(--main-color);
+  }
+
+  #hide-show-menu{
+  	width: 50px;
+  	height: 50px;
+  	display: none;
+  }
+
+    #hide-show-menu img{
+    	width: 100%;
+    	height: 100%;
+    }
+
+/*
+========================================
+=                             Hero Section                           =
+========================================
+*/
+
+#hero-section{
+	width: 100%;
+	position: relative;
+	background: url('../img/header-background.jpg') no-repeat center bottom;
+	background-size: cover;
+	padding-top: 120px;
+}
+
+#hero-section .row{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#hero-section .heading-section h1{
+	     color: var(--txt-color);
+	    font-size: 70px;
+	    font-weight: 700;
+	    letter-spacing: -3px;
+}
+
+#hero-section .heading-section p{
+	    color: #8a9095;
+	    font-size: 24px;    	
+	    color: var(--txt-color);
+	    margin:  30px auto;
+	    width: 79%;
+	    letter-spacing: 1px;
+	    opacity: .6;
+	    font-weight: 300;
+	    line-height: 42px;
+}
+
+#hero-section #form{
+	margin-bottom: 100px;
+}
+
+#hero-section .newslatter #email{
+	font-size: 19px;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 38px;
+    width: 541px;
+    color: #ccc;
+}
+
+#hero-section .newslatter #email:focus{
+	outline: none;
+	box-shadow: none;
+}
+
+#submit{
+	background: var(--main-color);
+	border: none;
+	width: 130px;
+	height: 80px;
+	margin-left: -5px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+
+#hero-section .watch-div{
+	width: 100%;
+}
+
+#hero-section .watch-div img{
+	height: 420px;
+	margin-bottom: 90px;
+}
+
+/*
+=================================
+=                Product-Banner                    =
+=================================
+*/
+
+#product{
+	background: #fff;
+	padding: 100px 0px;
+}
+
+#product h1, #How-It-Works h1, #benefits h1, #collection h1, #show-off  .the-watch h1{
+	color: var(--txt-color);
+	text-transform: uppercase;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 600;
+}
+
+#product p, #How-It-Works .p, #benefits .p, #collection p, #show-off  .the-watch p{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+	text-align: center;
+	color: #969da3;
+	font-size: 20px;
+	margin: 10px auto;
+}
+
+#product p::after{
+	content: ' ';
+	position: absolute;
+	left: 50%;
+	width: 140px;
+	height: 8px;
+	transform: translate(-50%);
+	border-radius: 6px;
+	background: var(--main-color);
+	bottom: -30px;
+}
+
+#product .img-div{
+	margin-top: 160px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+
+/*
+==========================
+=           How It's Works              =
+==========================
+*/
+
+#How-It-Works{
+	background: #F8FBFD;
+	padding: 100px 0;
+	text-align: center;
+}
+
+#How-It-Works .process{
+	margin-top: 100px;
+}
+
+#How-It-Works .process h3{
+	font-size: 26px;
+	color: var(--txt-color);
+	font-weight: 600;
+	margin-bottom: 10px;
+	margin-top: 60px;
+}
+
+#How-It-Works .process p{
+	font-size: 16px;
+	color: #969da3;
+}
+
+/*
+===========================
+=                 Benefits                    =
+===========================
+*/
+
+#benefits{
+	background: #FFF;
+	padding: 100px 0;
+	text-align: center;
+}
+
+#benefits .txt-div, #band .txt-div{
+	text-align: left;
+}
+
+#benefits .pre-div, #band .pre-div{
+	display: flex;
+}
+
+#benefits .benefit-outer-div, #band .benefit-outer-div{
+	margin-top: 30px;
+}
+
+#benefits .benefit-outer-div .col-4::nth-child(2), #band .benefit-outer-div .col-4::nth-child(2){
+	margin-top: 50px;
+}
+
+#benefits .col-4, #band .col-4{
+	padding: 0;
+}
+
+#benefits .col-4 .pre-div, #band .col-4 .pre-div{
+	margin-top: 50px;
+}
+
+#benefits .pre-div .icon i, #band .pre-div .icon i{
+	color:  var(--main-color);
+	font-size: 34px;
+	margin-right: 20px;
+	padding-top: 10px;
+}
+
+#benefits .pre-div h5, #band .pre-div h5{
+	color: #374048;
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+#benefits .pre-div p, #band .pre-div p{
+	color: #374048;
+	font-size: 14px;
+	opacity: .6;
+	line-height: 26px;
+}
+
+#band{
+	background: #F8FBFD;
+	padding: 100px 0;
+}
+
+#band .center-img{
+	position: relative;
+}
+
+#band .center-img img{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-56%);
+}
+
+/*
+================================
+=                OUR COLLECTION                 =
+================================
+*/
+
+#collection{
+	padding: 100px 0;
+	background: #fff;
+}
+
+#collection .products-div{
+	margin-top: 100px;
+}
+
+#collection .product{
+	text-align: center;
+	padding: 15px;
+}
+
+#collection .txt-div h6{
+	color: #0084ff;
+	font-size: 16px;
+	margin-top: 30px;
+}
+
+#collection .txt-div p{
+	color: #b4bcc3;
+	font-size: 13px;
+	margin: 5px auto;
+}
+
+#collection .product .prize{
+	 color: #f62;
+	 font-size: 22px;
+   margin: 14px 0 20px;
+}
+
+#collection .product .buy-now{
+	  background: #f62;
+	  color: #fff;
+    font-size: 18px;
+    margin: 14px 0 20px;
+    text-decoration: none;
+    padding: 10px 24px;
+    border-radius: 50px;
+}
+
+
+/*
+===========================
+=         Last Div show-off             =
+===========================
+*/
+
+#show-off .the-watch{
+	padding: 100px 0;
+	background: #F8FBFD;
+}
+
+#show-off  .img-div{
+	text-align: right;
+}
+
+#show-off  .the-watch h1{
+	text-align: left;
+}
+
+#show-off  .the-watch p{
+	text-align: left;
+	margin-left: 0;
+	width: 97%;
+	margin-bottom: 50px;
+}
+
+#show-off  .the-watch ul{
+	padding-left: 0;
+	display: block;
+	margin-left: 0;
+}
+
+#show-off  .the-watch ul li{
+	    color: #696f74;
+	    margin-top: 22px;
+	    font-size: 22px;
+	    opacity: .6;
+}
+
+#show-off  .the-watch ul li::before{
+    width: 32px;
+    height: 32px;
+    margin-right: 17px;
+    content: '';
+    float: left;
+	  background: url(../img/check.png) no-repeat scroll 0 0;
+}
+
+#show-off .container-fluid .image img{
+	  width: 100%;
+	  height: auto;
+}
+
+#show-off .container-fluid h4{
+	color:  #374048;
+	margin: 42px 0 25px;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+#show-off .container-fluid p{
+	color:  #c0cad0;
+	font-size: 18px;
+	margin: 0;
+}
+
+#show-off .the-left-watch .txt-div{
+	display: flex;
+	align-items: center;
+}
+
+#show-off .the-left-watch .inner-txt{
+	width: 540px;
+	margin-left: 40px;
+}
+
+#show-off .the-right-watch .txt-div{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#show-off .the-right-watch .inner-txt{
+	width: 540px;
+	margin-right: 40px;
+}
+
+#footer{
+	text-align: center;
+	background: #E9EAED;
+	padding: 30px;
+}
+
+
+
+
+/*
+====================================
+=                      Responsive Css                      =
+====================================
+*/
+
+@media screen and (max-width:  1200px){
+	  #benefits .benefit-outer-div .col-xl-4{
+	  	display: flex !important;
+	  	margin-top: 50px;
+	  }
+
+	  #show-off .img-div{
+	  	text-align: center;
+	  	margin-top: 30px;
+	  }
+
+	  #show-off .img-div img{
+	  	height: 400px;
+	  	width: auto;
+	  }
+
+	  #show-off .col-xl-6 .inner-txt{
+	  	width: 100%;
+	  	margin-left: 0px;
+	  	text-align: center;
+	  	margin-top: 20px;
+	  	margin-bottom: 20px;
+	  }
+
+	  #show-off .container-fluid .col-xl-6{
+	  	max-width: 70%;
+	  }
+
+	  #show-off .container-fluid .row{
+	  	display: flex;
+	  	justify-content: center;
+	  }
+}
+
+@media screen and (max-width:  992px){
+	  #hide-show-menu{
+	  	display: block;
+	  	float: right;
+	  	cursor: pointer;
+	  }
+	  #header #nav-bar ul{
+	  	flex-flow: column;
+	  	position: absolute;
+	  	justify-content: flex-start;
+	  	text-align: left;
+	  	height: 100vh;
+	  	background: #fff;
+	  	top: 0;
+	  	padding: 80px 70px 0 40px;
+	  	left: -100%;
+	  	z-index: 99;
+	  }
+
+	  #header #nav-bar ul.active{
+	  	left: 0;
+	  }
+
+	  #header .col-11{
+	  	position: inherit;
+	  }
+
+	  h1{
+	  	font-size: 46px !important;
+	  	letter-spacing: 0 !important;
+	  }
+
+	  #band{
+	  	display: none;
+	  }
+}
